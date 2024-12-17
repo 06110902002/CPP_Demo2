@@ -40,6 +40,42 @@ inline typename std::enable_if_t<I < sizeof...(Tp)>
 /**------------------ 递归写法------------------*/
 
 
+/**------------------ 使用逗号表达式展开模版中的参数 ------------------*/
+template <typename T>
+void printArg(T t) {
+    std::cout << "参数 " << t << std::endl;
+}
+
+/**
+ * expand函数中的逗号表达式：(printarg(args), 0)，先执行printarg(args)，再得到逗号表达式的结果0。
+ * 同时还用到了C++11的另外一个特性——初始化列表，通过初始化列表来初始化一个变长数组,{(printarg(args), 0)...}
+ * 将会展开成((printarg(arg1),0), (printarg(arg2),0), (printarg(arg3),0), etc... )，
+ * 最终会创建一个元素值都为0的数组int arr[sizeof...(Args)]。由于是逗号表达式，
+ * 在创建数组的过程中会先执行逗号表达式前面的部分printarg(args)打印出参数，
+ * 也就是说在构造int数组的过程中就将参数包展开了，这个数组的目的纯粹是为了在数组构造的过程展开参数包。
+   原文链接：https://blog.csdn.net/qq_52670477/article/details/122879842
+ * @tparam Args
+ * @param args
+ */
+template <typename  ...Args>
+void testDouhao(Args... args) {
+    int arr[] = {(printArg(args),0)...};
+    int n = sizeof...(Args);
+    for (int i=0; i < n; i ++) {
+        std::cout << "  arr "<<arr[i];
+    }
+    std::cout << std::endl;
+}
+
+
+//我们可以把上面的例子再进一步改进一下，将函数作为参数，就可以支持lambda表达式了，从而可以少写一个打印函数：
+template<typename F,typename ...Args>
+void printArg2(const F &f, Args &&...args) {
+    //使用逗号表达式 + 列表初始化  通过初始化列表来初始化一个变长数组
+    int arr[] = {(f(std::forward<Args>(args)), 0)...};
+}
+
+/**------------------ 使用逗号表达式展开模版中的参数 ------------------*/
 
 
 template <typename T, typename... Args>
@@ -121,7 +157,7 @@ public:
         });
         std::cout << std::endl;
 
-        //转发 参数
+        //使用逗号表达式 转发 参数
         (test(std::forward<const Types &>(args)), ...);
     }
 
@@ -166,7 +202,7 @@ struct SafeDivide {
 template <typename T>
 struct SafeDivide<T, true>{     // 偏特化A
     static T Do(T lhs, T rhs){
-        printf("187-----lhs = %f  rhs = %f",lhs,rhs);
+        printf("187-----lhs = %f  rhs = %f\n",lhs,rhs);
         return lhs/rhs;
     }
 };
@@ -196,6 +232,12 @@ int main() {
     //SafeDivide<int>::Do(1, 2);
 
 
+    testDouhao(1,2,3,4,5,6,7);
+
+
+    printArg2([](int i) {
+        std::cout<< i << std::endl;
+    },1,22,44);
 
     return 0;
 }
