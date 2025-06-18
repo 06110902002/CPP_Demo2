@@ -54,6 +54,8 @@ void printArg(T t) {
  * 在创建数组的过程中会先执行逗号表达式前面的部分printarg(args)打印出参数，
  * 也就是说在构造int数组的过程中就将参数包展开了，这个数组的目的纯粹是为了在数组构造的过程展开参数包。
    原文链接：https://blog.csdn.net/qq_52670477/article/details/122879842
+
+   逗号表达式可以展开 模版参数
  * @tparam Args
  * @param args
  */
@@ -72,7 +74,10 @@ void testDouhao(Args... args) {
 template<typename F,typename ...Args>
 void printArg2(const F &f, Args &&...args) {
     //使用逗号表达式 + 列表初始化  通过初始化列表来初始化一个变长数组
-    int arr[] = {(f(std::forward<Args>(args)), 0)...};
+    //int arr[] = {(f(std::forward<Args>(args)), 0)...};
+
+    //逗号表达式来展开模版参数
+    (f(std::forward<Args>(args)), ...);
 }
 
 /**------------------ 使用逗号表达式展开模版中的参数 ------------------*/
@@ -166,7 +171,10 @@ public:
     void test(const T &value) {
         if constexpr (std::is_integral<T>::value) {
             testInt(value);
-        } else {
+        } else if constexpr (std::is_floating_point<T>::value) {
+            testFloat(value);
+        }
+        else {
             testStr((std::string &) value);
         }
     }
@@ -179,6 +187,12 @@ public:
     template <typename T, typename = typename std::enable_if<std::is_integral<T>::value>::type>
     void testInt(T& info) {
         printf("124-------这是整型api info = %d\n",info);
+    }
+    void testFloat(const float& info) {
+        printf("189-------这是floatapi info = %f\n",info);
+    }
+    void testDouble(double& info) {
+        printf("189-------这是floatapi info = %f\n",info);
     }
 
 
@@ -220,24 +234,26 @@ struct SafeDivide<T, false>{   // 偏特化B
 int main() {
 
 //    int ret = call<int,int>("add",23,34,45,56,222);
-//    testMsgPack();
+     testMsgPack();
 
 
 
 //    auto testOp = TestOp{};
-//    testOp(23,"liu",3434);
+//    testOp(23,23.4f,"liuss");
+//    TestOp* to = new TestOp();
+//    to->operator()(23,23.4f,"liuss");
 
 
-    SafeDivide<float>::Do(1.0f, 2.0f);    // 调用偏特化A
-    //SafeDivide<int>::Do(1, 2);
-
-
-    testDouhao(1,2,3,4,5,6,7);
-
-
-    printArg2([](int i) {
-        std::cout<< i << std::endl;
-    },1,22,44);
+//    SafeDivide<float>::Do(1.0f, 2.0f);    // 调用偏特化A
+//    //SafeDivide<int>::Do(1, 2);
+//
+//
+//    testDouhao(1,2,3,4,5,6,7);
+//
+//
+//    printArg2([](int i) {
+//        std::cout<< i << std::endl;
+//    },1,22,44);
 
     return 0;
 }

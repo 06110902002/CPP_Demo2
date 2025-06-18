@@ -102,12 +102,57 @@ public:
     }
 };
 
+template<typename T>
+class StringUtil {
+public:
+    StringUtil(T t) {
+        printf("117--------\n");
+    }
+};
+
+/**
+ * 偏特化 int
+ */
+template<>
+class StringUtil<int> {
+public:
+    StringUtil(int a) {
+        printf("128----整型 a = %d\n",a);
+    }
+};
+
+template<>
+class StringUtil<double> {
+public:
+    StringUtil() {
+
+    }
+};
+
+/**
+ * 偏特化 float
+ */
+template<>
+class StringUtil<float> {
+public:
+    StringUtil(float a) {
+        printf("128----整型 a = %d\n",a);
+    }
+};
+
+
+
+
+
 void testClassSP() {
     A<float, float> *a1 = new A<float, float>(3.0f);
     A<float, int> *a2 = new A<float, int>(10);
     char *s = "liu";
     A<float, char *> *a3 = new A<float, char *>(s);
+
+    StringUtil<int>* a = new StringUtil<int> (23);
 }
+/**--------------------------测试类模版特化，全特化，偏特化-----------------------------**/
 
 
 //测试二 在派生时  类模版特化的使用
@@ -183,8 +228,8 @@ void printType(T value) {
 
 int main() {
     //testFuncTemp();
-    //testClassSP();
-    testClassExp();
+    testClassSP();
+    //testClassExp();
 
     return 0;
 }

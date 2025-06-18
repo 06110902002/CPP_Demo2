@@ -46,12 +46,19 @@ cmake_ninja_workdir = /Users/rambo.liu/Documents/Demo/CPP_DEMO/CPP_Test1/cmake-b
 
 build cmake_object_order_depends_target_CPP_Test1: phony || CMakeFiles/CPP_Test1.dir
 
-build CMakeFiles/CPP_Test1.dir/enable_if_test.cpp.o: CXX_COMPILER__CPP_Test1_Debug /Users/rambo.liu/Documents/Demo/CPP_DEMO/CPP_Test1/enable_if_test.cpp || cmake_object_order_depends_target_CPP_Test1
-  DEP_FILE = CMakeFiles/CPP_Test1.dir/enable_if_test.cpp.o.d
+build CMakeFiles/CPP_Test1.dir/LeetCode.cpp.o: CXX_COMPILER__CPP_Test1_Debug /Users/rambo.liu/Documents/Demo/CPP_DEMO/CPP_Test1/LeetCode.cpp || cmake_object_order_depends_target_CPP_Test1
+  DEP_FILE = CMakeFiles/CPP_Test1.dir/LeetCode.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fno-elide-constructors -std=gnu++17
   INCLUDES = -I/Users/rambo.liu/Documents/Demo/CPP_DEMO/CPP_Test1/.
   OBJECT_DIR = CMakeFiles/CPP_Test1.dir
   OBJECT_FILE_DIR = CMakeFiles/CPP_Test1.dir
+
+build CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o: CXX_COMPILER__CPP_Test1_Debug /Users/rambo.liu/Documents/Demo/CPP_DEMO/CPP_Test1/datastruct/LinkList.cpp || cmake_object_order_depends_target_CPP_Test1
+  DEP_FILE = CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fno-elide-constructors -std=gnu++17
+  INCLUDES = -I/Users/rambo.liu/Documents/Demo/CPP_DEMO/CPP_Test1/.
+  OBJECT_DIR = CMakeFiles/CPP_Test1.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Test1.dir/datastruct
 
 
 # =============================================================================
@@ -61,7 +68,7 @@ build CMakeFiles/CPP_Test1.dir/enable_if_test.cpp.o: CXX_COMPILER__CPP_Test1_Deb
 #############################################
 # Link the executable CPP_Test1
 
-build CPP_Test1: CXX_EXECUTABLE_LINKER__CPP_Test1_Debug CMakeFiles/CPP_Test1.dir/enable_if_test.cpp.o
+build CPP_Test1: CXX_EXECUTABLE_LINKER__CPP_Test1_Debug CMakeFiles/CPP_Test1.dir/LeetCode.cpp.o CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/CPP_Test1.dir
   POST_BUILD = :

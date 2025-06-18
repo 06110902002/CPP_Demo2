@@ -338,7 +338,7 @@ void testSocketClient() {
         send(sock_cli, type, 4, 0);
 
         //发送4 字节 的报文长度
-        char* tmp = "this is test msg33";
+        char* tmp = "add";
         char* msg = (char*)malloc(strlen(tmp) + 1);
         memset(msg,0,strlen(tmp) + 1);
         sprintf(msg, "%s%d", tmp, i);
@@ -420,7 +420,7 @@ int main() {
         //test_async1();
         //test_async2();
 
-        //test_promise();
+        test_promise();
 
 
 
@@ -441,7 +441,7 @@ int main() {
 //
 //    printf("366-------size of(msg) = %lu sizeof(content) = %lu \n",sizeof(msg), strlen(msg));
 
-   //  testSocketClient();
+  //   testSocketClient();
 
 //    char str[] = "The answer is ";
 //    char* result = (char*)malloc(strlen(str) + 1);
