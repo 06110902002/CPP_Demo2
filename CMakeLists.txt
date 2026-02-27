@@ -26,11 +26,26 @@ add_executable(CPP_Test1
 #        timer.cpp
 #        TimeNode.cpp
 #        TimeNode.h
-        LeetCode.cpp
+        #LeetCode.cpp
         #sharePtr.cpp
         #DataSruct.cpp
         datastruct/LinkList.cpp
         datastruct/LinkList.h
         datastruct/TreeNode.h
         #datastruct/WeakPtr.h
-        )
+
+        #C call cpp
+        #c_call_cpp/main.c
+        c_call_cpp/cpp_lib.cpp
+        c_call_cpp/wrapper.cpp
+
+        #C call sdk
+        c_call_cpp/sdk/sdk.h
+        c_call_cpp/sdk/sdk_impl.h
+        c_call_cpp/sdk/sdk.cpp
+        c_call_cpp/sdk/test_sdk.c
+        c_call_cpp/sdk/sdk_class.h
+        c_call_cpp/sdk/sdk_template.h
+        c_call_cpp/sdk/sdk_internal.h
+        #c_call_cpp/sdk/test_sdk_cpp.cpp
+)

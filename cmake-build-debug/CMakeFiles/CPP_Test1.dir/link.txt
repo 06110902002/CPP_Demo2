@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o CMakeFiles/CPP_Test1.dir/c_call_cpp/cpp_lib.cpp.o CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.o CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/test_sdk.c.o -o CPP_Test1
