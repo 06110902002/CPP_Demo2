@@ -9,7 +9,7 @@
 #include <unistd.h>   // sleep
 #include <stdio.h>
 
-static void async_cb(int result, void* user_data) {
+ void async_cb(int result, void* user_data) {
     int* out = (int*)user_data;
     *out = result;
     printf("async callback result = %d\n", result);

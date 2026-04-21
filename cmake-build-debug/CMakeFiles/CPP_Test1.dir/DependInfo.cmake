@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/c_call_cpp/sdk/test_sdk.c" "CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/test_sdk.c.o" "gcc" "CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/test_sdk.c.o.d"
   "/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/c_call_cpp/cpp_lib.cpp" "CMakeFiles/CPP_Test1.dir/c_call_cpp/cpp_lib.cpp.o" "gcc" "CMakeFiles/CPP_Test1.dir/c_call_cpp/cpp_lib.cpp.o.d"
   "/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/c_call_cpp/sdk/sdk.cpp" "CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.o" "gcc" "CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.o.d"
   "/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/c_call_cpp/wrapper.cpp" "CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o" "gcc" "CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o.d"
   "/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/datastruct/LinkList.cpp" "CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o" "gcc" "CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o.d"
+  "/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/promise/promise_main.cpp" "CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.o" "gcc" "CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -177,30 +177,6 @@ c_call_cpp/sdk/sdk.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.s
 .PHONY : c_call_cpp/sdk/sdk.cpp.s
 
-c_call_cpp/sdk/test_sdk.o: c_call_cpp/sdk/test_sdk.c.o
-.PHONY : c_call_cpp/sdk/test_sdk.o
-
-# target to build an object file
-c_call_cpp/sdk/test_sdk.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/test_sdk.c.o
-.PHONY : c_call_cpp/sdk/test_sdk.c.o
-
-c_call_cpp/sdk/test_sdk.i: c_call_cpp/sdk/test_sdk.c.i
-.PHONY : c_call_cpp/sdk/test_sdk.i
-
-# target to preprocess a source file
-c_call_cpp/sdk/test_sdk.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/test_sdk.c.i
-.PHONY : c_call_cpp/sdk/test_sdk.c.i
-
-c_call_cpp/sdk/test_sdk.s: c_call_cpp/sdk/test_sdk.c.s
-.PHONY : c_call_cpp/sdk/test_sdk.s
-
-# target to generate assembly for a file
-c_call_cpp/sdk/test_sdk.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/test_sdk.c.s
-.PHONY : c_call_cpp/sdk/test_sdk.c.s
-
 c_call_cpp/wrapper.o: c_call_cpp/wrapper.cpp.o
 .PHONY : c_call_cpp/wrapper.o
 
@@ -249,6 +225,30 @@ datastruct/LinkList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.s
 .PHONY : datastruct/LinkList.cpp.s
 
+promise/promise_main.o: promise/promise_main.cpp.o
+.PHONY : promise/promise_main.o
+
+# target to build an object file
+promise/promise_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.o
+.PHONY : promise/promise_main.cpp.o
+
+promise/promise_main.i: promise/promise_main.cpp.i
+.PHONY : promise/promise_main.i
+
+# target to preprocess a source file
+promise/promise_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.i
+.PHONY : promise/promise_main.cpp.i
+
+promise/promise_main.s: promise/promise_main.cpp.s
+.PHONY : promise/promise_main.s
+
+# target to generate assembly for a file
+promise/promise_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.s
+.PHONY : promise/promise_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -264,15 +264,15 @@ help:
 	@echo "... c_call_cpp/sdk/sdk.o"
 	@echo "... c_call_cpp/sdk/sdk.i"
 	@echo "... c_call_cpp/sdk/sdk.s"
-	@echo "... c_call_cpp/sdk/test_sdk.o"
-	@echo "... c_call_cpp/sdk/test_sdk.i"
-	@echo "... c_call_cpp/sdk/test_sdk.s"
 	@echo "... c_call_cpp/wrapper.o"
 	@echo "... c_call_cpp/wrapper.i"
 	@echo "... c_call_cpp/wrapper.s"
 	@echo "... datastruct/LinkList.o"
 	@echo "... datastruct/LinkList.i"
 	@echo "... datastruct/LinkList.s"
+	@echo "... promise/promise_main.o"
+	@echo "... promise/promise_main.i"
+	@echo "... promise/promise_main.s"
 .PHONY : help
 
 

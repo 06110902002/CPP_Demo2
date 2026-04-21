@@ -43,9 +43,15 @@ add_executable(CPP_Test1
         c_call_cpp/sdk/sdk.h
         c_call_cpp/sdk/sdk_impl.h
         c_call_cpp/sdk/sdk.cpp
-        c_call_cpp/sdk/test_sdk.c
+        #c_call_cpp/sdk/test_sdk.c
         c_call_cpp/sdk/sdk_class.h
         c_call_cpp/sdk/sdk_template.h
         c_call_cpp/sdk/sdk_internal.h
         #c_call_cpp/sdk/test_sdk_cpp.cpp
+
+        #dispatch_task/dispatch_main.cpp
+        #muti_thread/muti_thread_main.cpp
+        promise/promise_main.cpp
+
 )
+
