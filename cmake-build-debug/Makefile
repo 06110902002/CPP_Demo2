@@ -225,29 +225,29 @@ datastruct/LinkList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.s
 .PHONY : datastruct/LinkList.cpp.s
 
-promise/promise_main.o: promise/promise_main.cpp.o
-.PHONY : promise/promise_main.o
+promise/rpc_promise_main.o: promise/rpc_promise_main.cpp.o
+.PHONY : promise/rpc_promise_main.o
 
 # target to build an object file
-promise/promise_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.o
-.PHONY : promise/promise_main.cpp.o
+promise/rpc_promise_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/rpc_promise_main.cpp.o
+.PHONY : promise/rpc_promise_main.cpp.o
 
-promise/promise_main.i: promise/promise_main.cpp.i
-.PHONY : promise/promise_main.i
+promise/rpc_promise_main.i: promise/rpc_promise_main.cpp.i
+.PHONY : promise/rpc_promise_main.i
 
 # target to preprocess a source file
-promise/promise_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.i
-.PHONY : promise/promise_main.cpp.i
+promise/rpc_promise_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/rpc_promise_main.cpp.i
+.PHONY : promise/rpc_promise_main.cpp.i
 
-promise/promise_main.s: promise/promise_main.cpp.s
-.PHONY : promise/promise_main.s
+promise/rpc_promise_main.s: promise/rpc_promise_main.cpp.s
+.PHONY : promise/rpc_promise_main.s
 
 # target to generate assembly for a file
-promise/promise_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.s
-.PHONY : promise/promise_main.cpp.s
+promise/rpc_promise_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/promise/rpc_promise_main.cpp.s
+.PHONY : promise/rpc_promise_main.cpp.s
 
 # Help Target
 help:
@@ -270,9 +270,9 @@ help:
 	@echo "... datastruct/LinkList.o"
 	@echo "... datastruct/LinkList.i"
 	@echo "... datastruct/LinkList.s"
-	@echo "... promise/promise_main.o"
-	@echo "... promise/promise_main.i"
-	@echo "... promise/promise_main.s"
+	@echo "... promise/rpc_promise_main.o"
+	@echo "... promise/rpc_promise_main.i"
+	@echo "... promise/rpc_promise_main.s"
 .PHONY : help
 
 

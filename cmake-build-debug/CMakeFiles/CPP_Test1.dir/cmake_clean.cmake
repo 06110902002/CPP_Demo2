@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o.d"
   "CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o"
   "CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o.d"
-  "CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.o"
-  "CMakeFiles/CPP_Test1.dir/promise/promise_main.cpp.o.d"
+  "CMakeFiles/CPP_Test1.dir/promise/rpc_promise_main.cpp.o"
+  "CMakeFiles/CPP_Test1.dir/promise/rpc_promise_main.cpp.o.d"
   "CPP_Test1"
   "CPP_Test1.pdb"
 )
