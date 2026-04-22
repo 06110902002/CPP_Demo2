@@ -52,7 +52,8 @@ add_executable(CPP_Test1
         #dispatch_task/dispatch_main.cpp
         #muti_thread/muti_thread_main.cpp
         #promise/promise_main.cpp
-        promise/rpc_promise_main.cpp
+        #promise/rpc_promise_main.cpp
+        type_tran/type_tran_main.cpp
         #promise/rpc_main.cpp
 
 )
