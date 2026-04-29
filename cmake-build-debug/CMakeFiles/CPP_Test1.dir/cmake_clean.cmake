@@ -7,8 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o.d"
   "CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o"
   "CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o.d"
-  "CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o"
-  "CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o.d"
+  "CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o"
+  "CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o.d"
+  "CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o"
+  "CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o.d"
   "CPP_Test1"
   "CPP_Test1.pdb"
 )

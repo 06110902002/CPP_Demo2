@@ -53,7 +53,12 @@ add_executable(CPP_Test1
         #muti_thread/muti_thread_main.cpp
         #promise/promise_main.cpp
         #promise/rpc_promise_main.cpp
-        type_tran/type_tran_main.cpp
+        #type_tran/type_tran_main.cpp
+        protobuf/litepb.h
+        protobuf/litepb.cpp
+        protobuf/user.pb.h
+        protobuf/pb_main.cpp
+        protobuf/pb_utils.h
         #promise/rpc_main.cpp
 
 )

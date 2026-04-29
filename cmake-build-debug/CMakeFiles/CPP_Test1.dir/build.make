@@ -128,19 +128,33 @@ CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/c_call_cpp/sdk/sdk.cpp -o CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.s
 
-CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o: CMakeFiles/CPP_Test1.dir/flags.make
-CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o: /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/type_tran/type_tran_main.cpp
-CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o: CMakeFiles/CPP_Test1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o -MF CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o.d -o CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o -c /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/type_tran/type_tran_main.cpp
+CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o: CMakeFiles/CPP_Test1.dir/flags.make
+CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o: /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/litepb.cpp
+CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o: CMakeFiles/CPP_Test1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o -MF CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o.d -o CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o -c /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/litepb.cpp
 
-CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/type_tran/type_tran_main.cpp > CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.i
+CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/litepb.cpp > CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.i
 
-CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/type_tran/type_tran_main.cpp -o CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.s
+CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/litepb.cpp -o CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.s
+
+CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o: CMakeFiles/CPP_Test1.dir/flags.make
+CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o: /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/pb_main.cpp
+CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o: CMakeFiles/CPP_Test1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o -MF CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o.d -o CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o -c /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/pb_main.cpp
+
+CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/pb_main.cpp > CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.i
+
+CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/protobuf/pb_main.cpp -o CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.s
 
 # Object files for target CPP_Test1
 CPP_Test1_OBJECTS = \
@@ -148,7 +162,8 @@ CPP_Test1_OBJECTS = \
 "CMakeFiles/CPP_Test1.dir/c_call_cpp/cpp_lib.cpp.o" \
 "CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o" \
 "CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.o" \
-"CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o"
+"CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o" \
+"CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o"
 
 # External object files for target CPP_Test1
 CPP_Test1_EXTERNAL_OBJECTS =
@@ -157,10 +172,11 @@ CPP_Test1: CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.o
 CPP_Test1: CMakeFiles/CPP_Test1.dir/c_call_cpp/cpp_lib.cpp.o
 CPP_Test1: CMakeFiles/CPP_Test1.dir/c_call_cpp/wrapper.cpp.o
 CPP_Test1: CMakeFiles/CPP_Test1.dir/c_call_cpp/sdk/sdk.cpp.o
-CPP_Test1: CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o
+CPP_Test1: CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o
+CPP_Test1: CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o
 CPP_Test1: CMakeFiles/CPP_Test1.dir/build.make
 CPP_Test1: CMakeFiles/CPP_Test1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CPP_Test1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/505691285qq.com/Documents/workspace/demo/CPP_Demo2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable CPP_Test1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPP_Test1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

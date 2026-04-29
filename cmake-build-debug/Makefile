@@ -225,29 +225,53 @@ datastruct/LinkList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/datastruct/LinkList.cpp.s
 .PHONY : datastruct/LinkList.cpp.s
 
-type_tran/type_tran_main.o: type_tran/type_tran_main.cpp.o
-.PHONY : type_tran/type_tran_main.o
+protobuf/litepb.o: protobuf/litepb.cpp.o
+.PHONY : protobuf/litepb.o
 
 # target to build an object file
-type_tran/type_tran_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.o
-.PHONY : type_tran/type_tran_main.cpp.o
+protobuf/litepb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.o
+.PHONY : protobuf/litepb.cpp.o
 
-type_tran/type_tran_main.i: type_tran/type_tran_main.cpp.i
-.PHONY : type_tran/type_tran_main.i
+protobuf/litepb.i: protobuf/litepb.cpp.i
+.PHONY : protobuf/litepb.i
 
 # target to preprocess a source file
-type_tran/type_tran_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.i
-.PHONY : type_tran/type_tran_main.cpp.i
+protobuf/litepb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.i
+.PHONY : protobuf/litepb.cpp.i
 
-type_tran/type_tran_main.s: type_tran/type_tran_main.cpp.s
-.PHONY : type_tran/type_tran_main.s
+protobuf/litepb.s: protobuf/litepb.cpp.s
+.PHONY : protobuf/litepb.s
 
 # target to generate assembly for a file
-type_tran/type_tran_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/type_tran/type_tran_main.cpp.s
-.PHONY : type_tran/type_tran_main.cpp.s
+protobuf/litepb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/protobuf/litepb.cpp.s
+.PHONY : protobuf/litepb.cpp.s
+
+protobuf/pb_main.o: protobuf/pb_main.cpp.o
+.PHONY : protobuf/pb_main.o
+
+# target to build an object file
+protobuf/pb_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.o
+.PHONY : protobuf/pb_main.cpp.o
+
+protobuf/pb_main.i: protobuf/pb_main.cpp.i
+.PHONY : protobuf/pb_main.i
+
+# target to preprocess a source file
+protobuf/pb_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.i
+.PHONY : protobuf/pb_main.cpp.i
+
+protobuf/pb_main.s: protobuf/pb_main.cpp.s
+.PHONY : protobuf/pb_main.s
+
+# target to generate assembly for a file
+protobuf/pb_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Test1.dir/build.make CMakeFiles/CPP_Test1.dir/protobuf/pb_main.cpp.s
+.PHONY : protobuf/pb_main.cpp.s
 
 # Help Target
 help:
@@ -270,9 +294,12 @@ help:
 	@echo "... datastruct/LinkList.o"
 	@echo "... datastruct/LinkList.i"
 	@echo "... datastruct/LinkList.s"
-	@echo "... type_tran/type_tran_main.o"
-	@echo "... type_tran/type_tran_main.i"
-	@echo "... type_tran/type_tran_main.s"
+	@echo "... protobuf/litepb.o"
+	@echo "... protobuf/litepb.i"
+	@echo "... protobuf/litepb.s"
+	@echo "... protobuf/pb_main.o"
+	@echo "... protobuf/pb_main.i"
+	@echo "... protobuf/pb_main.s"
 .PHONY : help
 
 
